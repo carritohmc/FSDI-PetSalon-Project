@@ -1,0 +1,12 @@
+body{
+    font-family: arial;
+    background-color: azure;
+
+}
+
+li{
+    border: 1px solid black;
+    width: 200px;
+    background-color: bisque;
+    padding: 10px;
+}
