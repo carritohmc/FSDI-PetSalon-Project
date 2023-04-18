@@ -20,6 +20,35 @@
     </header>
 
     <main>
+        <!--form for inputs-->
+        <div class="formContainer"> 
+            <label>Name</label>
+            <input type="text" id="txtName" placeholder="Enter Pet's name" value="" > 
+            <label>Age</label>
+            <input type="number" id="txtAge" placeholder="Enter Pet's age" value="" > 
+            <label>Gender</label>
+            <input type="text" id="txtGender" placeholder="Select Gender" value="" > 
+            <label>Service</label>
+            <select name="Service" id="txtService">
+                <option value=""disabled selected> Select a service</option>
+                <option value="Nail Trim">Nail Trim</option>
+                <option value="Bath">Bath</option>
+                <option value="Vaccine">Vaccine</option>
+                <option value="brush">Brush</option>
+              </select>
+            <label>Breed</label>
+            <input type="text" id="txtBreed" placeholder="Enter Pet's Breed" value="" > 
+            <label>Type</label>
+            <select name="selectType" id="txtType" placeholder="Select Pet Type">
+                <option value=""disabled selected> Select a Pet Type</option>
+                <option value="Dog">Dog</option>
+                <option value="Cat">Cat</option>
+                <option value="Bird">Bird</option>
+            </select>
+            <button class ="btn" onclick="register()">Register</button>
+        </div>
+
+
         <h2>Name of pets:</h2>
         <div id="pets" class="nameDiv">
             

@@ -1,42 +1,17 @@
 console.log("practice");
-//object literal
- let student = {
-    name:"Felix",
-    age:39,
-    grades:[3.9,3.8,4.0],
-    address:{
-        country:"USA",
-        state:"Georgia",
-        city:"Atlanta",
 
-    }
+
+
+ //creating a student with an object constructor
+ function Student(n,a,g){
+    this.name =n;
+    this.age =a;
+    this.gender=g;
  }
 
-//object literal
- let student1 = {
-    name:"Mario",
-    age:39,
-    grades:[3.9,3.8,4.0],
-    address:{
-        country:"MEX",
-        state:"Baja California",
-        city:"Tijuana",
+ //creating the object
+ let student = new Student("Felix",38,"male"); 
 
-    }
- }
-
-//object literal
- let student2 = {
-    name:"Rafael",
-    age:39,
-    grades:[3.9,3.8,4.0],
-    address:{
-        country:"MEX",
-        state:"Baja California",
-        city:"Tijuana",
-
-    }
- }
 
  console.log(student, student1, student2);
  //or console.log(student.age);
@@ -52,3 +27,5 @@ console.log("practice");
     <p>Country: ${student.address.country}</p>
 </div>
  `);
+
+

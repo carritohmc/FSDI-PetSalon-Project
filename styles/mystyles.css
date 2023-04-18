@@ -10,6 +10,7 @@ h1{
     border-radius: 3px;
     color: #21232b;
     font-weight: 700;
+
 }
 nav{
     letter-spacing: 3px;
@@ -28,6 +29,7 @@ a{
     text-shadow: #21232b;
     font-style: oblique;
     font-weight: bold;
+    text-decoration: none;
 }
 a:hover{
     background-color: #a0d2eb;
@@ -35,6 +37,9 @@ a:hover{
 
 main{
     background-color: #e5eaf5;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
 
 }
 
@@ -67,7 +72,8 @@ li{
 
 main .nameDiv{
     padding-left: 50px;
-
+    height: 500px;
+     background-color: #e5eaf5;
 }
 
 main hr{
@@ -107,8 +113,72 @@ img{
 }
 
 .pictureDiv{
-padding-left: 5%;
-padding-right: 5%;
-max-height: 300px;
+    padding-left: 5%;
+    padding-right: 5%;
+    max-height: 300px;
+    
+    }
+    
+    input, select{
+        width: 200px;
+        border-radius: 5px;
+        padding: 2px;
+        border: none;
+        display: flex;
+        max-width: 100%;
+        
+    }
+    
+    label{
+        width: 100px;
+        display: flex;
+justify-content: center;
+
+    }
+    
+.formContainer{
+    width: 20%;
+    display:flex;
+    flex-direction: column;
+    background-color: lightgray;
+    align-items: center;
+
+    border-radius: 10px;
+    margin-left: 50px;
+    margin:15px 25%;
+ 
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    width: 50%;
+    min-width: 60px;
+}
+
+.error{
+    background-color: rgb(245, 171, 171);
+}
+
+.indexMain{
+    background-image: url(https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80);
+    background-color: #cccccc;
+    height: 520px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    position: relative;
+    background-blend-mode: multiply;
+    border-radius: 10px;
+
+
+}
+
+.indexMain h2, h3{
+color: white;
+background-color:rgba(158, 89, 143, 0.8);
 
 }
