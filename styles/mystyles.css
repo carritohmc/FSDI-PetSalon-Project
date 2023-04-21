@@ -70,11 +70,7 @@ li{
  
 }
 
-main .nameDiv{
-    padding-left: 50px;
-    height: 500px;
-     background-color: #e5eaf5;
-}
+
 
 main hr{
     height: 6px;
@@ -83,7 +79,7 @@ main hr{
 
 .petDiv{
     color: #ffffff;
-    background-color: #494d5f;
+    background-color: #c7cad6;
     padding: 2px;
     border-bottom-left-radius: 3px;
     display: flex;
@@ -182,3 +178,51 @@ color: white;
 background-color:rgba(158, 89, 143, 0.8);
 
 }
+
+h4{
+    color: #494d5f;
+font-size: 21px;
+}
+
+.pets{
+
+    border: 5px solid black;
+    background-color: #8dd4da;
+    border-radius: 5px;
+
+
+}
+
+#pets{
+
+    column-gap: 1rem;
+    border: 5px solid rgb(49, 49, 49);
+    border-radius: 10px;
+
+}
+
+.pets h6{
+    font-size: 16px;
+}
+
+table{
+    border:1px solid;
+    border-radius: 5px;
+    width: 100%;
+}
+
+td{
+    text-align: center;
+    border:3px solid #8458b3;
+
+}
+
+th{
+    background-color: #494d5f;
+    border:3px solid #8458b3;
+    border-radius: 5px;
+    color: rgb(212, 212, 212);
+    text-transform: uppercase;
+}
+
+

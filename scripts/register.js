@@ -48,19 +48,14 @@ let inputType =document.getElementById("txtType");
     else {
       //  alert("Please fill out the name");
     }
-    console.log(business.pets.inputService);
+  //  displayPetCards();
+    displayTable();
+    alertAdd();
     clearInputs();
  }
  
  
- function init()
- {
-    let pet = new Pets("Oso",30,"male","grooming","Rottweiler");
-    let pet1 = new Pets("Loba",20,"female","trim","Shiba Inu");
-    let pet2 = new Pets("Canibal",70,"male","vaccines","Chihuahua");
-    business.pets.push(pet,pet1,pet2);
-    displayPetNames();
-}
+
 
 function clearInputs(){
 inputName.value="";
@@ -113,14 +108,23 @@ function isValid(aPet){
     return valid;
 }
 
+const alertDiv =document.getElementById("alertDiv");
 
-
-function displayPetNames(){
-for(let i=0; i<business.pets.length; i++){
-    document.getElementById("pets").innerHTML+=`
-    <li class"pets"> ${business.pets[i].name}</li>`
+function alertAdd(){
+alertDiv.innerHTML =`<div class ="alert">
+Congratulations, a pet was added successfully!
+</div>`
+setTimeout(function(){
+    alertDiv.innerHTML ="";
+},3000)
 }
 
-document.getElementById("petSummary").innerHTML=`<h3> Number of Pets registered: ${business.pets.length} </h3> `
-
+function init()
+{
+   let pet = new Pets("Oso",30,"male","nails","Rottweiler","dog");
+   let pet1 = new Pets("Loba",20,"female","brush","Shiba Inu","dog");
+   let pet2 = new Pets("Canibal",70,"male","vaccine","Chihuahua","dog");
+   business.pets.push(pet,pet1,pet2);
+   displayTable();
+   //displayPetCards();
 }

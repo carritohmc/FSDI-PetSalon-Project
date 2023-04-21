@@ -29,3 +29,9 @@ console.log("practice");
  `);
 
 
+//let p=document.createElement('p');
+//p.textContent="something";
+//document.getElementById("pets").innerHTML="<p>something</p>";
+
+//or
+//document.getElementById("pets").innerHTML="<p>something</p>";

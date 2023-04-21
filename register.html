@@ -21,7 +21,10 @@
 
     <main>
         <!--form for inputs-->
+        <div id="petSummary" class="petDiv">
+        </div>
         <div class="formContainer"> 
+        <div id="alertDiv"></div>
             <label>Name</label>
             <input type="text" id="txtName" placeholder="Enter Pet's name" value="" > 
             <label>Age</label>
@@ -31,10 +34,10 @@
             <label>Service</label>
             <select name="Service" id="txtService">
                 <option value=""disabled selected> Select a service</option>
-                <option value="Nail Trim">Nail Trim</option>
-                <option value="Bath">Bath</option>
-                <option value="Vaccine">Vaccine</option>
-                <option value="brush">Brush</option>
+                <option value="nails">Nail Trim💅</option>
+                <option value="bath">Bath🛁</option>
+                <option value="vaccine">Vaccine💉</option>
+                <option value="brush">Brush😼</option>
               </select>
             <label>Breed</label>
             <input type="text" id="txtBreed" placeholder="Enter Pet's Breed" value="" > 
@@ -51,12 +54,21 @@
 
         <h2>Name of pets:</h2>
         <div id="pets" class="nameDiv">
-            
-        </div>
-        <hr>
-        <div id="petSummary" class="petDiv">
+        <table id="petsTable">
+            <thead>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Service</th>
+                <th>Breed</th>
+                <th>Type</th>
+            </thead>
+            <tbody id="petsRow"></tbody>
+        </table>
+        
 
         </div>
+        <hr>
         <div class="allPictures">
             <div class="pictureDiv">
                 <img src="images/dogBath.jpg" alt="dog being bathed">
@@ -81,5 +93,6 @@
 
     </footer>
     <script src="scripts/register.js"> </script>
+    <script src="scripts/displayPets.js"> </script>
 </body>
 </html>
