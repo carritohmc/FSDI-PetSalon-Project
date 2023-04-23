@@ -1,6 +1,10 @@
 function displayPetCards(){
 let card="";
 const DIV = document.getElementById("pets");
+
+
+
+
 for(let i=0; i<business.pets.length; i++){
     let color="";
 
@@ -25,6 +29,8 @@ for(let i=0; i<business.pets.length; i++){
     <p>${pet.breed}</p>
     <p>${pet.type}</p>
     <p>${pet.service}</p>
+    <p>${pet.color}</p>
+    
     </div>`;
 }
 console.log(card);
@@ -56,20 +62,30 @@ function displayTable(){
         
    
         tableDisplay+=`
-        <tr class="pet" style="background-color:${color};"><td>${pet.name}</td>
-        <td >${pet.age}</td>
+        <tr id ="${pet.id}" class="pet" style="background-color:${color}; width:300px">
+        <td>${pet.name}</td>
+        <td>${pet.age}</td>
         <td>${pet.gender}</td>
         <td>${pet.breed}</td>
         <td>${pet.type}</td>
-        <td>${pet.service}</td>
+        <td>${capitalizeFirstLetter(pet.service)}</td>
+        <td>${pet.color}</td>
+        <td style="width:50px;"; > <button onclick="deletePet(${pet.id});">Delete</button> </td>
         </tr>
         `;
-        color="red";
     }
 DIV.innerHTML=tableDisplay;
 document.getElementById("petSummary").innerHTML=`<h4> Number of Pets registered: ${business.pets.length} </h4> `
+
+
+
 }
 
+
+
+function capitalizeFirstLetter(word){
+    return word.charAt(0).toUpperCase()+word.slice(1);
+}
 
 function displayPetNames(){
     for(let i=0; i<business.pets.length; i++){
@@ -81,3 +97,12 @@ function displayPetNames(){
     
     }
     
+
+    function alertDelete(){
+        alertDiv.innerHTML =`<div class ="alert">
+        Congratulations, a pet was deleted successfully!
+        </div>`
+        setTimeout(function(){
+            alertDiv.innerHTML ="";
+        },3000)
+        }

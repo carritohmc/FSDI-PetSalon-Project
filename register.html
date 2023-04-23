@@ -48,20 +48,28 @@
                 <option value="Cat">Cat</option>
                 <option value="Bird">Bird</option>
             </select>
+            <label>Color</label>
+            <input type="text" id="txtColor" placeholder="Enter Pet's main Color" value="" > 
             <button class ="btn" onclick="register()">Register</button>
         </div>
 
+            <div class="search-section">
+                <input class="bordered" type="search" id="txtSearch" placeholder="Search a Pet" onkeyup="searchPet()">
+                <button onclick="searchPet();">Search</button>
 
-        <h2>Name of pets:</h2>
+            </div>
+
+        <h2>Registered pets:</h2>
         <div id="pets" class="nameDiv">
         <table id="petsTable">
             <thead>
                 <th>Name</th>
                 <th>Age</th>
                 <th>Gender</th>
-                <th>Service</th>
                 <th>Breed</th>
                 <th>Type</th>
+                <th>Service</th>
+                <th>Color</th>
             </thead>
             <tbody id="petsRow"></tbody>
         </table>
